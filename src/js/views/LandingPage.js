@@ -34,23 +34,6 @@ const LandingPage = () => {
           </Card>
         </Col>
       </Row>
-
-      <Row className="justify-content-center">
-        <Col xs={12} md={6}>
-          <Card bg="light">
-            <Card.Body>
-              <Card.Title>How to Use</Card.Title>
-              <Card.Text>
-                To use this application, simply enter the stock symbol of the
-                company you're interested in into the input field above, then
-                click "Submit". The application will fetch and display
-                historical data for the stock. For example, you could enter
-                "AAPL" for Apple, "GOOG" for Google, or "MSFT" for Microsoft.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
     </Container>
   );
 };
