@@ -11,7 +11,7 @@ import {
 
 const StockData = ({ stockSymbol }) => {
   const [data, setData] = useState(null);
-  const apiKey = "YOUR_ALPHAVANTAGE_KEY"; // Replace with your actual API key
+  const apiKey = "ALPHAVANTAGE_API_KEY";
 
   useEffect(() => {
     fetch(

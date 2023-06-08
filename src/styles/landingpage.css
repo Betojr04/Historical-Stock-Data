@@ -3,3 +3,27 @@
 }
 
 /* More custom styles can be added here */
+
+.hero-section {
+  /* Replace this URL with the URL of your actual image */
+  background: url("https://images.unsplash.com/photo-1642142783250-d1bef1dafbc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxzdG9ja3N8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60")
+    center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 60vh; /* vh stands for viewport height. 60vh will be 60% of the height of the viewport. */
+  display: flex;
+  align-items: center; /* This will center your text vertically. */
+  justify-content: center; /* This will center your text horizontally. */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* The class .container could be replaced with the specific class or id of your main container */
+.container {
+  margin: 0;
+  padding: 0;
+}
