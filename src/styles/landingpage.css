@@ -1,29 +1,80 @@
-.landing-page-bg {
-  background-color: #343a40; /* a Bootstrap color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* More custom styles can be added here */
-
-.hero-section {
-  /* Replace this URL with the URL of your actual image */
-  background: url("https://images.unsplash.com/photo-1642142783250-d1bef1dafbc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxzdG9ja3N8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60")
-    center center no-repeat;
-  background-size: cover;
-  color: white;
-  height: 60vh; /* vh stands for viewport height. 60vh will be 60% of the height of the viewport. */
-  display: flex;
-  align-items: center; /* This will center your text vertically. */
-  justify-content: center; /* This will center your text horizontally. */
-}
-
-html,
 body {
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
 }
 
-/* The class .container could be replaced with the specific class or id of your main container */
-.container {
-  margin: 0;
-  padding: 0;
+.main-content {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.form-container,
+.stock-data-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive layout */
+@media screen and (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+  }
+
+  .form-container,
+  .stock-data-container {
+    align-items: flex-start;
+  }
 }
